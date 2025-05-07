@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet " href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="heading">
+        <div class="logo">
+            <a href="/home.html">
+                <img src="images/logo.png" alt="Flicks by Winter logo">
+            </a>
+        </div>
+        <div class="topheading">
+            <nav class="menu">
+              <ul class="menuitems">
+                <li class="menuitem"><a href="about.html">about</a></li>
+                <li class="menuitem"><a href="catlog.html">catlog</a></li>
+                <li class="menuitem"><a href="visuals.html">visuals</a></li>
+                <li class="menuitem"><a href="contact.html">contact</a></li>
+            </ul>
+            </nav>
+            <div class="bookinglink"><a href="https://FlicksByWinter.as.me" target="_blank">booking</a></div>
+        </div>
+    </div>
+       <div class="contactcontent">
+        <img src="/images/Flicks By Winter.png" alt="">
+        <div class="social"></div> 
+       </div>
+    </body>
+    </html>
+   
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Flicks By Winter</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(to bottom, #61b4f0, #cce0ff);
+      overflow: hidden;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .contactcontent {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .contactcontent img {
+      max-width: 300px;
+    }
+
+    .social {
+      margin-top: 20px;
+      font-size: 24px;
+      color: #087fdf;
+    }
+
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      z-index: 1;
+      color: #fff;
+      font-size: 1em;
+      user-select: none;
+      pointer-events: none;
+      animation-name: fall;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+    
+      
+<div class="contactcontent">
+    <div class="social">
+        Contact Instagram: 
+        <a href="https://instagram.com/Flicks_By_Winter" target="_blank" style="color: #1a73e8; text-decoration: none;">
+          @Flicks_By_Winter
+        </a>
+      </div>
+      
+</div>
+
+<script>
+  const snowflakeCount = 50;
+  const body = document.body;
+
+  for (let i = 0; i < snowflakeCount; i++) {
+    const snowflake = document.createElement('div');
+    snowflake.className = 'snowflake';
+    snowflake.textContent = '❄';
+    snowflake.style.left = Math.random() * 100 + 'vw';
+    snowflake.style.fontSize = (Math.random() * 20 + 20) + 'px';
+    snowflake.style.animationDuration = (Math.random() * 5 + 5) + 's';
+    snowflake.style.opacity = Math.random();
+    snowflake.style.animationDelay = Math.random() * 10 + 's';
+    body.appendChild(snowflake);
+  }
+</script>
+
+</body>
+</html>
