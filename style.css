@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    display: flex;
+    width: 100%;
+}
+.logo{
+    
+    width: 33%;
+}
+.logo img{
+    width: 200px;
+    margin-left: 25px;
+    margin-top: 25px;
+
+}
+.topheading{
+
+width: 66%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: 5%;
+padding-right: 5% ;
+}
+.menuitems{
+    margin-left: 45%;
+    list-style: none;
+    display: flex;
+}
+.menuitem{
+    padding: 5%;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+.menuitem a{
+    font-size: 17px;
+    text-decoration: none;
+    color: #0e4eae;
+}
+.bookinglink a{ 
+    text-decoration: none;
+    color: #0e4eae;
+    text-transform: uppercase;
+    border: 1px solid #0e4eae;
+    padding: 5px 10px;
+    font-size: 17px;
+}
+.homevideo video{
+    object-fit: cover;
+    margin: auto;
+}
+.homevideo{
+    display: flex; justify-content: center;
+    margin-top: 25px;
+} 
+.images{
+    gap: 15px;
+display:flex;
+flex-wrap: wrap;
+}
+.images img{
+    width: calc(25% - 15px) ;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh; /* or set a specific height */
+    position: relative;
+    top: 0; /* you had top: 50px — remove or adjust if needed */
+    text-align: center; /* ensures text inside is centered */
+}
+
+.hero-text {
+    width: 100%;
+    padding: 40px 20px;
+}
+.about-photo {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.about-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about-photo img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.hero-text {
+    max-width: 800px;
+    font-size: 25px;
+    line-height: 1.6;
+}
+.portrait{
+    height: 500px;
+}
+
+.video{
+   
+}
